@@ -1,0 +1,192 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10%;
+
+    --primary: 24 94% 53%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 10%;
+
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+
+    --accent: 24 94% 53%;
+    --accent-foreground: 0 0% 10%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 24 94% 53%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 0 0% 10%;
+    --sidebar-primary: 24 94% 53%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 96%;
+    --sidebar-accent-foreground: 0 0% 10%;
+    --sidebar-border: 0 0% 90%;
+    --sidebar-ring: 24 94% 53%;
+  }
+
+  .dark {
+    --background: 0 0% 10%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 15%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 15%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 24 94% 53%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 0 0% 20%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 0 0% 20%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 24 94% 53%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 24 94% 53%;
+
+    --sidebar-background: 0 0% 15%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 24 94% 53%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 0 0% 20%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 0 0% 20%;
+    --sidebar-ring: 24 94% 53%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-inter antialiased;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer components {
+  .workouts-button {
+    @apply bg-smartfit-orange text-white px-6 py-3 rounded-xl font-medium
+      transition-all duration-300 hover:bg-smartfit-darkorange hover:shadow-md
+      focus:outline-none focus:ring-2 focus:ring-smartfit-orange focus:ring-opacity-50
+      active:bg-smartfit-darkorange active:scale-95;
+  }
+
+  .exercise-card {
+    @apply bg-card rounded-2xl shadow-md overflow-hidden transition-all duration-300
+      hover:shadow-lg hover:translate-y-[-4px] border border-border;
+  }
+
+  .workout-header {
+    @apply bg-gradient-to-r from-smartfit-orange to-smartfit-darkorange text-white
+      py-5 px-6 rounded-t-2xl shadow-md;
+  }
+
+  .input-field {
+    @apply w-full bg-background border border-input rounded-xl px-4 py-3
+      focus:outline-none focus:ring-2 focus:ring-smartfit-orange focus:border-transparent
+      transition-all duration-200;
+  }
+
+  .timer-display {
+    @apply text-5xl font-bold text-center py-6 px-8 rounded-2xl bg-card shadow-md
+      border-2 border-smartfit-orange text-foreground;
+  }
+
+  .animated-button {
+    @apply transition-all duration-300 transform hover:scale-105 active:scale-95;
+  }
+
+  .page-transition {
+    @apply animate-fade-in;
+  }
+
+  .slide-up-animation {
+    @apply animate-slide-up;
+  }
+
+  .scale-animation {
+    @apply animate-scale-in;
+  }
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Glass effect */
+.glass-effect {
+  @apply dark:bg-black/30 bg-white/70 backdrop-blur-md border border-white/10 dark:border-white/5;
+}
+
+/* Smooth scrollbar for Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(249, 115, 22, 0.5) transparent;
+}
+
+/* Smooth scrollbar for Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(249, 115, 22, 0.5);
+  border-radius: 20px;
+}
+
+/* Timer pulse animation */
+.timer-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}

@@ -39,5 +39,5 @@ Sinta-se à vontade para entrar em contato comigo:
 
 - **LinkedIn:** [linkedin.com/in/bernardoalvesdev](https://linkedin.com/in/bernardoalvesdev)
 - **E-mail:** bernardoalvesdev@gmail.com
-- **Portfólio:** [bernardoalvesdev.vercel.app](https://bernardoalvesdev.vercel.app)
+- **Portfólio:** https://www.bernardoalvesdev.com.br
 

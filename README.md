@@ -21,7 +21,7 @@ A aplicação foi desenvolvida utilizando **React** e **TailwindCSS**, garantind
 ## 🚀 Tecnologias Utilizadas
 
 - **Linguagens:** JavaScript, TypeScript
-- **Frameworks/Libraries:** ReactJS, TailwindCSS
+- **Frameworks/Libraries:** ReactJS, TailwindCSS, ShadCN UI
 - **Build Tool:** Vite
 
 ---

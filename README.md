@@ -1,43 +1,87 @@
-# 🏋️ EspertoFit
+# 🏋️‍♂️ EspertoFit
 
-Esta é um projeto de uma aplicação web desenvolvida com ReactJS + TypeScript.
-
-## 📋 Índice
-
-- Sobre
-- Tecnologias Utilizadas
-- Funcionalidades
-- Contato
+Aplicação web criada para auxiliar usuários a gerenciarem seus treinos, metas e evolução fitness. Desenvolvida com React, TypeScript e TailwindCSS para uma interface moderna, rápida e responsiva, permitindo registrar exercícios e acompanhar progresso.
 
 ---
 
-## 🧐 Sobre
+## 📦 Tecnologias utilizadas
 
-O **EspertoFit** é um projeto criado para ajudar usuários a organizarem seus treinos na academia. Com uma interface intuitiva e responsiva, ele permite que qualquer pessoa faça e crie sua própria rotina.
-A aplicação foi desenvolvida utilizando **React** e **TailwindCSS**, garantindo rapidez e uma excelente experiência de usuário.
+### Frontend
+
+- **React.js**: biblioteca principal para construção da interface
+- **TypeScript**: tipagem estática para maior confiabilidade e manutenção
+- **TailwindCSS**: utilitário CSS para criação rápida de layouts responsivos
+- **Vite**: bundler moderno e eficiente para ambiente de desenvolvimento e build
+- **Lucide React**: ícones SVG personalizáveis para ilustrar funcionalidades
+
+### Deploy & Versionamento
+
+- **Vercel**: plataforma de deploy contínuo integrada ao GitHub
+- **GitHub**: versionamento e colaboração do projeto
 
 ---
 
-## 🚀 Tecnologias Utilizadas
+## 🗂️ Estrutura do projeto
 
-- **Linguagens:** JavaScript, TypeScript
-- **Frameworks/Libraries:** ReactJS, TailwindCSS, ShadCN UI
-- **Build Tool:** Vite
+```
+espertofit/
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── hooks/
+│   └── App.tsx
+├── public/
+│   └── index.html
+├── package.json
+├── tsconfig.json
+└── tailwind.config.js
+```
 
 ---
 
-## ✅ Funcionalidades
+## ⚙️ Como rodar localmente
 
-- Personalização total de seu treino e sua rotina de exercícios, sendo possível definir suas repetições, séries e tempo de descanso.
-- Interface totalmente intuitiva e responsiva para dispositivos mobile.
-- Possibilidade de ativar o tema escuro, caso o usuário prefira.
+### 🧪 Pré-requisitos
+
+- [Node.js](https://nodejs.org/) v18+
+- [Yarn](https://yarnpkg.com/) ou npm
+
+---
+
+### ▶️ Executando via Yarn
+
+```bash
+# 1. Instale as dependências
+yarn install
+
+# 2. Rode o projeto em ambiente de desenvolvimento
+yarn dev
+```
+
+A aplicação estará disponível em:  
+📍 `http://localhost:5173`
+
+---
+
+## 🧠 Decisões de arquitetura
+
+- **React + TypeScript**: garante desenvolvimento seguro, escalável e com código fácil de manter
+- **TailwindCSS**: permite estilizar rapidamente mantendo consistência visual
+- **Vite**: proporciona hot reload rápido e builds otimizados
+- **Lucide React**: adiciona ícones modernos para melhorar a UX
+
+---
+
+## 📄 Licença
+
+Projeto desenvolvido por Bernardo Alves. Livre para fins educacionais.
 
 ---
 
 ## 👤 Contato
+
 Sinta-se à vontade para entrar em contato comigo:
 
 - **LinkedIn:** [linkedin.com/in/bernardoalvesdev](https://linkedin.com/in/bernardoalvesdev)
 - **E-mail:** bernardoalvesdev@gmail.com
-- **Portfólio:** https://www.bernardoalvesdev.com.br
-
+- **Portfólio:** [https://www.bernardoalvesdev.com.br](https://www.bernardoalvesdev.com.br)
